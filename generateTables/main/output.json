@@ -1,0 +1,23 @@
+{
+	"EUR": {
+		"Success": false,
+		"Timestamp": "2024-01-08T15:20:14.6556069+01:00",
+		"Base": "EUR",
+		"Date": "",
+		"Rates": { "EUR": 1, "GBP": 0.861237, "USD": 1.094858 }
+	},
+	"GBP": {
+		"Success": false,
+		"Timestamp": "2024-01-08T15:20:14.6556069+01:00",
+		"Base": "GBP",
+		"Date": "",
+		"Rates": { "EUR": 1.161121, "GBP": 1, "USD": 1.271263 }
+	},
+	"USD": {
+		"Success": false,
+		"Timestamp": "2024-01-08T15:20:14.6556069+01:00",
+		"Base": "USD",
+		"Date": "",
+		"Rates": { "EUR": 0.913375, "GBP": 0.78673, "USD": 1 }
+	}
+}
