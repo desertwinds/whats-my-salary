@@ -16,7 +16,6 @@ type CurrencyTable struct {
 	Success   bool
 	Timestamp time.Time
 	Base      string
-	Date      string
 	Rates     map[string]float64
 }
 
@@ -38,6 +37,7 @@ func main() {
 
 	for _, currency := range currencies {
 		currencyTables[currency] = CurrencyTable{
+			Success:   true,
 			Base:      currency,
 			Timestamp: currentTimestamp,
 			Rates:     make(map[string]float64),
