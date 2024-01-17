@@ -57,6 +57,7 @@ const CurrencyHolder = () => {
       { loading && 'Loading...' }
       { currencies.map((currency) =>
         <CurrencyInput
+          key={`${currency}-input`}
           currency={currency}
           onChange={onChangeCurrency}
           value={currentValues[currency]}
