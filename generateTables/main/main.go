@@ -20,6 +20,7 @@ type CurrencyTable struct {
 }
 
 var apiKey string
+var filePath string
 
 func init() {
 	err := godotenv.Load("../../.env")
@@ -28,6 +29,7 @@ func init() {
 	}
 
 	apiKey = os.Getenv("CURRCONV_API_KEY")
+	filePath = os.Getenv("FILE_PATH")
 }
 
 func main() {
@@ -78,7 +80,7 @@ func main() {
 		currencyTables[from].Rates[from] = 1.0
 	}
 
-	f, err := os.Create("./output.json")
+	f, err := os.Create(filePath)
 	if err != nil {
 		log.Fatalf("error %s", err)
 	}
