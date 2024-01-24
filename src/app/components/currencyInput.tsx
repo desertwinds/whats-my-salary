@@ -1,3 +1,5 @@
+import { Input } from 'antd';
+
 type Props = {
   currency: string;
   value: number;
@@ -8,7 +10,7 @@ const CurrencyInput = ({ currency, value, onChange }: Props) => {
   return(
     <div>
       <p>{currency}</p>
-      <input
+      <Input
         value={value}
         type="number"
         min="0.00"
